@@ -1,0 +1,83 @@
+@mixin spandesign {
+  width: 45px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 100%;
+  margin-right: 2px;
+  color: white;
+  padding: 10px !important;
+  text-align: left !important;
+}
+
+.rigthpanel {
+  flex: 0.15;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  div {
+    margin-top: 15px;
+  }
+}
+
+// .option1 {
+//   display: flex;
+//   justify-content: center;
+//   text-align: center;
+// }
+
+.type_notvisited {
+  @include spandesign();
+  background-color: grey;
+}
+
+.question_notanswered {
+  @include spandesign();
+  background-color: red;
+}
+
+.type_quesanswered {
+  @include spandesign();
+  background-color: green;
+}
+
+.type_quesmarked {
+  @include spandesign();
+  background-color: cyan;
+}
+
+.type_answeredandreview {
+  @include spandesign();
+  background-color: darkolivegreen;
+}
+
+.section_name {
+  background-color: lightblue;
+  font-weight: 900;
+}
+
+.questions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0 !important;
+  text-align: center;
+  align-items: center;
+  .question {
+    background-color: lightblue;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding-top: 9px;
+  }
+}
+
+.submitexam {
+  background-color: white;
+  color: lightblue;
+  text-align: center !important;
+  border-radius: 100px;
+  border: 1px solid lightblue;
+  padding: 5px;
+  outline: none;
+}

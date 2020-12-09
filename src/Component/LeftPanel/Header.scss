@@ -1,0 +1,32 @@
+.header {
+  padding-top: 5px;
+  flex: 0.1;
+  .header_heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .heading_tile {
+    padding-left: 10px;
+    color: #2f6690;
+  }
+
+  .timer {
+    background-color: #2f6690;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+  }
+  .header_displaySection {
+    border: 2px solid #2f6690;
+    padding: 3px 0px;
+    border-radius: 100px;
+    span {
+      border: 1px solid #2f6690;
+      //   border-right: none;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
+      //   border-radius: 100px;
+    }
+  }
+}

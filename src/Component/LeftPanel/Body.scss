@@ -1,0 +1,67 @@
+@mixin backgroundcolor {
+  background-color: rgba(207, 235, 255, 0.5) !important;
+}
+
+.body {
+  flex: 0.85;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid #2f6690;
+  background-color: white;
+  .content {
+    flex: 0.9;
+  }
+  .btn {
+    display: block !important;
+  }
+  .option {
+    text-align: right;
+    padding-right: 0 !important;
+    margin-left: 25px;
+  }
+  .body_option {
+    padding: 6px 12px;
+    background-color: #2f6690;
+    margin-bottom: 7px !important;
+    color: white;
+  }
+  .select_option {
+    border-radius: 0px !important;
+    color: black;
+    border: 1px solid rgb(207, 235, 255);
+    margin-bottom: 5px !important;
+    &:hover {
+      @include backgroundcolor;
+      //   background-color: rgba(207, 235, 255, 0.5) !important;
+      color: black;
+      border: 1px solid rgb(207, 235, 255);
+    }
+  }
+
+  .body_question {
+    text-align: center;
+    margin: 50px;
+  }
+  .question_num {
+    color: #2f6690 !important;
+    font-weight: 600;
+    display: inline-block !important;
+    border-bottom: 2px solid #2f6690;
+    text-transform: uppercase;
+  }
+  .selected_option {
+    background-color: rgb(207, 235, 255) !important ;
+  }
+  #option1 {
+    @include backgroundcolor;
+  }
+  #option2 {
+    @include backgroundcolor;
+  }
+  #option3 {
+    @include backgroundcolor;
+  }
+  #option4 {
+    @include backgroundcolor;
+  }
+}
